@@ -1,0 +1,7 @@
+@echo off
+
+iverilog rtl\alu.v rtl\control_unit.v rtl\cpu_top.v rtl\if_id_reg.v rtl\instruction_memory.v rtl\pc.v rtl\register_file.v testbench\cpu_top_tb.v -o cpu_sim
+
+vvp cpu_sim
+
+gtkwave cpu.vcd

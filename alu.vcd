@@ -1,0 +1,216 @@
+$date
+	Sat Feb 28 17:59:21 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$var wire 32 ! result [31:0] $end
+$var reg 32 " a [31:0] $end
+$var reg 3 # alu_control [2:0] $end
+$var reg 32 $ b [31:0] $end
+$scope module uut $end
+$var wire 32 % a [31:0] $end
+$var wire 3 & alu_control [2:0] $end
+$var wire 32 ' b [31:0] $end
+$var reg 32 ( result [31:0] $end
+$upscope $end
+$upscope $end
+$scope module control_unit_tb $end
+$var wire 1 ) reg_write $end
+$var wire 1 * mem_write $end
+$var wire 1 + mem_read $end
+$var wire 3 , alu_control [2:0] $end
+$var reg 7 - opcode [6:0] $end
+$scope module uut $end
+$var wire 7 . opcode [6:0] $end
+$var reg 3 / alu_control [2:0] $end
+$var reg 1 + mem_read $end
+$var reg 1 * mem_write $end
+$var reg 1 ) reg_write $end
+$upscope $end
+$upscope $end
+$scope module cpu_top_tb $end
+$var reg 1 0 clk $end
+$var reg 1 1 rst $end
+$scope module uut $end
+$var wire 1 0 clk $end
+$var wire 32 2 if_instr [31:0] $end
+$var wire 32 3 if_pc [31:0] $end
+$var wire 1 1 rst $end
+$var wire 1 4 reg_write $end
+$var wire 32 5 read_data2 [31:0] $end
+$var wire 32 6 read_data1 [31:0] $end
+$var wire 32 7 pc_out [31:0] $end
+$var wire 1 8 mem_write $end
+$var wire 1 9 mem_read $end
+$var wire 32 : instruction [31:0] $end
+$var wire 32 ; id_pc [31:0] $end
+$var wire 32 < id_instr [31:0] $end
+$var wire 32 = alu_result [31:0] $end
+$var wire 3 > alu_control [2:0] $end
+$scope module alu_inst $end
+$var wire 32 ? b [31:0] $end
+$var wire 3 @ alu_control [2:0] $end
+$var wire 32 A a [31:0] $end
+$var reg 32 B result [31:0] $end
+$upscope $end
+$scope module cu $end
+$var wire 7 C opcode [6:0] $end
+$var reg 3 D alu_control [2:0] $end
+$var reg 1 9 mem_read $end
+$var reg 1 8 mem_write $end
+$var reg 1 4 reg_write $end
+$upscope $end
+$scope module ifid $end
+$var wire 1 0 clk $end
+$var wire 32 E instr_in [31:0] $end
+$var wire 32 F pc_in [31:0] $end
+$var wire 1 1 rst $end
+$var reg 32 G instr_out [31:0] $end
+$var reg 32 H pc_out [31:0] $end
+$upscope $end
+$scope module imem $end
+$var wire 32 I instruction [31:0] $end
+$var wire 32 J addr [31:0] $end
+$upscope $end
+$scope module pc_inst $end
+$var wire 1 0 clk $end
+$var wire 1 1 rst $end
+$var reg 32 K pc_out [31:0] $end
+$upscope $end
+$scope module rf $end
+$var wire 1 0 clk $end
+$var wire 5 L rd [4:0] $end
+$var wire 32 M read_data1 [31:0] $end
+$var wire 32 N read_data2 [31:0] $end
+$var wire 1 4 reg_write $end
+$var wire 5 O rs1 [4:0] $end
+$var wire 5 P rs2 [4:0] $end
+$var wire 1 1 rst $end
+$var wire 32 Q write_data [31:0] $end
+$var integer 32 R i [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module instruction_memory_tb $end
+$var wire 32 S instruction [31:0] $end
+$var reg 32 T addr [31:0] $end
+$scope module uut $end
+$var wire 32 U addr [31:0] $end
+$var wire 32 V instruction [31:0] $end
+$upscope $end
+$upscope $end
+$scope module pc_tb $end
+$var wire 32 W pc_out [31:0] $end
+$var reg 1 X clk $end
+$var reg 1 Y rst $end
+$scope module uut $end
+$var wire 1 X clk $end
+$var wire 1 Y rst $end
+$var reg 32 Z pc_out [31:0] $end
+$upscope $end
+$upscope $end
+$scope module register_file_tb $end
+$var wire 32 [ read_data2 [31:0] $end
+$var wire 32 \ read_data1 [31:0] $end
+$var reg 1 ] clk $end
+$var reg 5 ^ rd [4:0] $end
+$var reg 1 _ reg_write $end
+$var reg 5 ` rs1 [4:0] $end
+$var reg 5 a rs2 [4:0] $end
+$var reg 32 b write_data [31:0] $end
+$scope module uut $end
+$var wire 1 ] clk $end
+$var wire 5 c rd [4:0] $end
+$var wire 32 d read_data1 [31:0] $end
+$var wire 32 e read_data2 [31:0] $end
+$var wire 1 _ reg_write $end
+$var wire 5 f rs1 [4:0] $end
+$var wire 5 g rs2 [4:0] $end
+$var wire 1 h rst $end
+$var wire 32 i write_data [31:0] $end
+$var integer 32 j i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx j
+bx i
+zh
+bx g
+bx f
+bx e
+bx d
+bx c
+bx b
+bx a
+bx `
+0_
+bx ^
+0]
+bx \
+bx [
+b0 Z
+1Y
+0X
+b0 W
+bx V
+b0 U
+b0 T
+bx S
+b100000 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+b0 J
+bx I
+b0 H
+b0 G
+b0 F
+bx E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+b0 <
+b0 ;
+bx :
+09
+08
+b0 7
+b0 6
+b0 5
+04
+b0 3
+bx 2
+11
+00
+b10 /
+b110011 .
+b110011 -
+b10 ,
+0+
+0*
+1)
+b1111 (
+b101 '
+b0 &
+b1010 %
+b101 $
+b0 #
+b1010 "
+b1111 !
+$end
